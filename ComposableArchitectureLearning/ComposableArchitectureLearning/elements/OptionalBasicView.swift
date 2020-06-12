@@ -15,12 +15,12 @@ Tapping "Toggle counter state" will flip between the `nil` and non-`nil` counter
 """
 
 struct OptionalBasicsState: Equatable {
-  var optionalCounter: CounterState?
+  var optionalCounterState: CounterState?
 }
 
 enum OptionalBasicsAction: Equatable {
   case optionalCounter(CounterAction)
-  case toggleCounterButtonTapped
+  case toggleOptionalCounter
 }
 
 struct OptionalBasicsEnvironment {}
@@ -28,11 +28,11 @@ struct OptionalBasicsEnvironment {}
 let optionalBasicsReducer = Reducer<
   OptionalBasicsState, OptionalBasicsAction, OptionalBasicsEnvironment
 >.combine(
-  Reducer { state, action, environment in
+  Reducer { state, action, _ in
     switch action {
-    case .toggleCounterButtonTapped:
-      state.optionalCounter =
-        state.optionalCounter == nil
+    case .toggleOptionalCounter:
+      state.optionalCounterState =
+        state.optionalCounterState == nil
         ? CounterState()
         : nil
       return .none
@@ -41,7 +41,7 @@ let optionalBasicsReducer = Reducer<
     }
   },
   counterReducer.optional.pullback(
-    state: \.optionalCounter,
+    state: \.optionalCounterState,
     action: /OptionalBasicsAction.optionalCounter,
     environment: { _ in CounterEnvironment() }
   )
@@ -54,22 +54,23 @@ struct OptionalBasicView: View {
       Form {
         Section(header: Text(readMe).font(.caption)) {
           Button("Toggle counter state") {
-            viewStore.send(.toggleCounterButtonTapped)
+            viewStore.send(.toggleOptionalCounter)
           }
           IfLetStore(
-            self.store.scope(state: \.optionalCounter, action: OptionalBasicsAction.optionalCounter),
+            self.store.scope(
+              state: \.optionalCounterState,
+              action: OptionalBasicsAction.optionalCounter),
             then: { store in
               VStack(alignment: .leading, spacing: 16) {
-                Text("`CounterState` is non-`nil`").font(.body)
+                Text("Counter state is not nil")
                 CounterView(store: store)
-                  .buttonStyle(BorderlessButtonStyle())
               }
+              .buttonStyle(BorderlessButtonStyle())
             },
-            else: Text("`CounterState` is non-`nil`").font(.body)
+            else: Text("Counter state is nil")
           )
         }
       }
-    }
-    .navigationBarTitle("Optional state")
+    }.navigationBarTitle("Optional Counter State")
   }
 }
