@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B41D82A24970ED40045B5D3 /* SharedStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B41D82924970ED40045B5D3 /* SharedStateView.swift */; };
 		2BA0E1F0248E10C2004D5614 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA0E1EF248E10C2004D5614 /* AppDelegate.swift */; };
 		2BA0E1F2248E10C2004D5614 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA0E1F1248E10C2004D5614 /* SceneDelegate.swift */; };
 		2BA0E1F4248E10C2004D5614 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA0E1F3248E10C2004D5614 /* RootView.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B41D82924970ED40045B5D3 /* SharedStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStateView.swift; sourceTree = "<group>"; };
 		2BA0E1EC248E10C2004D5614 /* ComposableArchitectureLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComposableArchitectureLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BA0E1EF248E10C2004D5614 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BA0E1F1248E10C2004D5614 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				2BF5B3AC249329AC00F32C15 /* TwoCountersView.swift */,
 				2BA0E20B248E23A4004D5614 /* BindingsBasics.swift */,
 				2BF5B3AA24931ED400F32C15 /* OptionalBasicView.swift */,
+				2B41D82924970ED40045B5D3 /* SharedStateView.swift */,
 			);
 			path = elements;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				2BA0E1F0248E10C2004D5614 /* AppDelegate.swift in Sources */,
 				2BF5B3AB24931ED400F32C15 /* OptionalBasicView.swift in Sources */,
 				2BA0E1F2248E10C2004D5614 /* SceneDelegate.swift in Sources */,
+				2B41D82A24970ED40045B5D3 /* SharedStateView.swift in Sources */,
 				2BA0E20C248E23A4004D5614 /* BindingsBasics.swift in Sources */,
 				2BA0E1F4248E10C2004D5614 /* RootView.swift in Sources */,
 				2BA0E205248E1721004D5614 /* CounterView.swift in Sources */,

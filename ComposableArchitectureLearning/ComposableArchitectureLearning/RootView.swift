@@ -51,6 +51,17 @@ struct RootView: View {
               )
             )
           )
+          
+          NavigationLink(
+            "Shared State",
+            destination: SharedStateView(
+              store: Store(
+                initialState: SharedState(),
+                reducer: sharedStateReducer,
+                environment: ()
+              )
+            )
+          )
         }
       }
       .navigationBarTitle("Case studies")
