@@ -63,6 +63,18 @@ struct RootView: View {
             )
           )
         }
+        
+        Section(header: Text("Effects")) {
+          NavigationLink(
+            "Basics Effects",
+            destination: EffectsBasicsView(
+              store: Store(
+                initialState: EffectBasicsState(),
+                reducer: effectsBasicsReducer,
+                environment: .live)
+            )
+          )
+        }
       }
       .navigationBarTitle("Case studies")
     }

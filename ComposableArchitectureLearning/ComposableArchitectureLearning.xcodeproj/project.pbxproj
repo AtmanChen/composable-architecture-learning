@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2B41D82A24970ED40045B5D3 /* SharedStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B41D82924970ED40045B5D3 /* SharedStateView.swift */; };
+		2B41D84F24974F720045B5D3 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B41D84E24974F720045B5D3 /* ActivityIndicator.swift */; };
+		2B41D851249750270045B5D3 /* EffectsBasicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B41D850249750270045B5D3 /* EffectsBasicsView.swift */; };
 		2BA0E1F0248E10C2004D5614 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA0E1EF248E10C2004D5614 /* AppDelegate.swift */; };
 		2BA0E1F2248E10C2004D5614 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA0E1F1248E10C2004D5614 /* SceneDelegate.swift */; };
 		2BA0E1F4248E10C2004D5614 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BA0E1F3248E10C2004D5614 /* RootView.swift */; };
@@ -24,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		2B41D82924970ED40045B5D3 /* SharedStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedStateView.swift; sourceTree = "<group>"; };
+		2B41D84E24974F720045B5D3 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
+		2B41D850249750270045B5D3 /* EffectsBasicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectsBasicsView.swift; sourceTree = "<group>"; };
 		2BA0E1EC248E10C2004D5614 /* ComposableArchitectureLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComposableArchitectureLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BA0E1EF248E10C2004D5614 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BA0E1F1248E10C2004D5614 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +77,7 @@
 				2BA0E1EF248E10C2004D5614 /* AppDelegate.swift */,
 				2BA0E1F1248E10C2004D5614 /* SceneDelegate.swift */,
 				2BA0E1F3248E10C2004D5614 /* RootView.swift */,
+				2B41D84E24974F720045B5D3 /* ActivityIndicator.swift */,
 				2BA0E203248E1709004D5614 /* elements */,
 				2BA0E1F5248E10C3004D5614 /* Assets.xcassets */,
 				2BA0E1FA248E10C3004D5614 /* LaunchScreen.storyboard */,
@@ -98,6 +103,7 @@
 				2BA0E20B248E23A4004D5614 /* BindingsBasics.swift */,
 				2BF5B3AA24931ED400F32C15 /* OptionalBasicView.swift */,
 				2B41D82924970ED40045B5D3 /* SharedStateView.swift */,
+				2B41D850249750270045B5D3 /* EffectsBasicsView.swift */,
 			);
 			path = elements;
 			sourceTree = "<group>";
@@ -186,7 +192,9 @@
 				2B41D82A24970ED40045B5D3 /* SharedStateView.swift in Sources */,
 				2BA0E20C248E23A4004D5614 /* BindingsBasics.swift in Sources */,
 				2BA0E1F4248E10C2004D5614 /* RootView.swift in Sources */,
+				2B41D851249750270045B5D3 /* EffectsBasicsView.swift in Sources */,
 				2BA0E205248E1721004D5614 /* CounterView.swift in Sources */,
+				2B41D84F24974F720045B5D3 /* ActivityIndicator.swift in Sources */,
 				2BF5B3AD249329AC00F32C15 /* TwoCountersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
