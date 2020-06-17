@@ -71,7 +71,19 @@ struct RootView: View {
               store: Store(
                 initialState: EffectBasicsState(),
                 reducer: effectsBasicsReducer,
-                environment: .live)
+                environment: .live
+              )
+            )
+          )
+          
+          NavigationLink(
+            "Effects cancellation",
+            destination: EffectsCancellationView(
+              store: Store(
+                initialState: EffectsCancellationState(),
+                reducer: effectsCanllationReducer,
+                environment: .live
+              )
             )
           )
         }
